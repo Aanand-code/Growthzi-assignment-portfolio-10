@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    gap: 30px;
 }
 
 /* LEFT SIDE */
@@ -83,9 +84,16 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
-
+    transition: all 0.3s ease;
 }
 
+.portfolio10-info-item:hover .portfolio10-contact-icon {
+    background: #A53DFF;
+}
+
+.portfolio10-info-item:hover .portfolio10-contact-icon svg path {
+    fill: #edd8ff;
+}
 
 .portfolio10-label {
 
@@ -110,13 +118,7 @@
     color: #000000;
 }
 
-.portfolio10-info-item:hover .portfolio10-contact-icon {
-    background: #A53DFF;
-}
 
-.portfolio10-info-item:hover .portfolio10-contact-icon svg path {
-    fill: #edd8ff;
-}
 
 /* SOCIAL ICONS */
 .portfolio10-social-row {
@@ -153,10 +155,6 @@
     width: 50%;
 }
 
-.portfolio10-contact-right input:focus label {
-    color: #A53DFF;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -164,10 +162,29 @@ form {
 }
 
 .portfolio10-field {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+
+
+label {
+    font-size: 14px;
+    margin-top: 25px;
+    color: #6f7a86;
+}
+
+.portfolio10-field input,
+.portfolio10-field textarea {
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    transition: border 0.3s ease;
 }
 
 .portfolio10-field:focus-within input {
@@ -182,25 +199,10 @@ form {
     border-bottom: 2px solid #A53DFF;
 }
 
-label {
-    font-size: 14px;
-    margin-top: 25px;
-}
-
-input,
-textarea {
-    border: none;
-    border-bottom: 2px solid #ddd;
-    padding: 4px;
-    font-size: 14px;
-    /* margin-top: 3px; */
-    outline: none;
-}
-
 .portfolio10-row-2 {
     display: flex;
     width: 100%;
-    gap: 10px;
+    gap: 15px;
 }
 
 .portfolio10-row-2 div {
@@ -219,16 +221,87 @@ textarea {
     border: none;
     cursor: pointer;
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
-    gap: 10px;
     justify-content: center;
-    padding: 10px 24px;
-    border-radius: 4px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .portfolio10-submit-btn:hover {
     background: #8431CC;
+}
+
+/* Large Screens */
+@media (max-width: 1200px) {
+    .portfolio10-contact-wrapper {
+        padding: 60px 100px;
+    }
+
+    .portfolio10-contact-card {
+        padding: 40px;
+    }
+
+    .portfolio10-contact-left h2 {
+        font-size: 32px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .portfolio10-contact-wrapper {
+        padding: 40px 50px;
+    }
+
+    .portfolio10-contact-card {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .portfolio10-contact-left,
+    .portfolio10-contact-right {
+        width: 100%;
+    }
+
+    .portfolio10-row-2 {
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .portfolio10-contact-wrapper {
+        padding: 30px 20px;
+        margin-bottom: 0;
+    }
+
+    .portfolio10-contact-card {
+        padding: 20px;
+    }
+
+    .portfolio10-contact-left h2 {
+        font-size: 24px;
+    }
+
+    .portfolio10-contact-left p {
+        font-size: 14px;
+    }
+
+    .portfolio10-info-item {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .portfolio10-field input,
+    .portfolio10-field textarea {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .portfolio10-submit-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
 }

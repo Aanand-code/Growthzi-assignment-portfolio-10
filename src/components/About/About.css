@@ -8,7 +8,7 @@
 .portfolio10-about-card {
     /* border: 2px solid black; */
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     margin-top: -540px;
     margin-bottom: 100px;
     background: white;
@@ -25,8 +25,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
 }
 
 /* Left side image */
@@ -47,11 +45,11 @@
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 2px;
     margin-top: -28px;
     width: fit-content;
-    text-align: center;
+    /* text-align: center; */
     /* margin-left: 40px; */
     z-index: 9999;
 }
@@ -141,7 +139,7 @@
     /* padding: 80px 200px; */
     justify-content: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     gap: 150px;
     background-color: #F0F1F3;
 }
@@ -165,18 +163,18 @@
     color: #6f7a86;
     font-size: 15px;
     line-height: 1.6;
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
 }
 
 
 
-/* Grid of 4 cards */
+/* Grid */
 .portfolio10-work-grid {
     display: grid;
     width: 50%;
     grid-template-columns: repeat(2, 250px);
     gap: 25px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .portfolio10-work-card {
@@ -184,12 +182,12 @@
     padding: 25px;
     border-radius: 14px;
     border: 1px solid #E6E8EB;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: box-shadow 0.3s ease;
 }
 
 .portfolio10-work-card:hover {
-    box-shadow: 0px 4px 32px #1C1919;
+    box-shadow: 0px 4px 32px rgba(28, 25, 25, 0.25);
 
 }
 
@@ -225,4 +223,97 @@
 .portfolio10-work-card:hover .portfolio10-icon-bg svg path {
 
     fill: #edd8ff;
+}
+
+@media (max-width: 1024px) {
+
+    .portfolio10-about-wrapper {
+        padding: 60px 100px;
+    }
+
+    .portfolio10-about-card {
+        padding: 60px;
+        gap: 40px;
+    }
+
+    .portfolio10-work-section {
+        padding: 60px 100px;
+        gap: 80px;
+    }
+
+    .portfolio10-work-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* ABOUT SECTION */
+    .portfolio10-about-wrapper {
+        padding: 50px 20px;
+    }
+
+    .portfolio10-about-card {
+        flex-direction: column;
+        padding: 40px 25px;
+        margin-top: -250px;
+        gap: 30px;
+        height: auto;
+    }
+
+    .portfolio10-profile-img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .portfolio10-about-social-box {
+        margin-top: -20px;
+    }
+
+    .portfolio10-right h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .portfolio10-right p {
+        text-align: center;
+    }
+
+    .portfolio10-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .portfolio10-buttons button {
+        width: 100%;
+    }
+
+
+    /* WORK PROCESS SECTION */
+    .portfolio10-work-section {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 40px;
+    }
+
+    .portfolio10-work-section-left,
+    .portfolio10-work-grid {
+        width: 100%;
+    }
+
+    .portfolio10-work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio10-work-section-left h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .portfolio10-work-section-left p {
+        text-align: center;
+    }
 }

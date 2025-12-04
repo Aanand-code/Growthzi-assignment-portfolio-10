@@ -12,6 +12,7 @@
 /* LEFT SIDE */
 .portfolio10-what-left {
     width: 45%;
+    min-width: 280px;
 }
 
 .portfolio10-what-left h2 {
@@ -48,6 +49,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    min-width: 280px;
 }
 
 .portfolio10-service-card-wrapper {
@@ -97,4 +99,10 @@
     font-size: 15px;
     color: #6f7a86;
     line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .portfolio10-what-section {
+        flex-wrap: wrap;
+    }
 }

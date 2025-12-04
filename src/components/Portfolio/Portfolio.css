@@ -24,6 +24,7 @@
     font-size: 15px;
     max-width: 500px;
     margin: 15px auto 40px;
+    line-height: 1.5;
 }
 
 /* Grid */
@@ -43,7 +44,7 @@
 }
 
 .portfolio10-portfolio-card:hover {
-    box-shadow: 0px 4px 32px #1C1919;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio10-portfolio-image {
@@ -114,4 +115,57 @@
 
 .portfolio10-more-project-btn:hover {
     background: #8431CC;
+}
+
+/* 1024px - Large Tablets */
+@media (max-width: 1200px) {
+    .portfolio10-portfolio-section {
+        padding: 70px 120px;
+    }
+}
+
+/* 900px - Tablets */
+@media (max-width: 900px) {
+    .portfolio10-portfolio-section {
+        padding: 60px 80px;
+    }
+}
+
+/* 768px - Small Tablets */
+@media (max-width: 768px) {
+    .portfolio10-portfolio-section {
+        padding: 50px 40px;
+    }
+
+    .portfolio10-portfolio-title {
+        font-size: 32px;
+    }
+
+    .portfolio10-portfolio-subtitle {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .portfolio10-portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* 480px - Mobile */
+@media (max-width: 480px) {
+    .portfolio10-portfolio-section {
+        padding: 40px 20px;
+    }
+
+    .portfolio10-portfolio-title {
+        font-size: 28px;
+    }
+
+    .portfolio10-portfolio-card {
+        border-radius: 8px;
+    }
+
+    .portfolio10-portfolio-image {
+        height: 160px;
+    }
 }

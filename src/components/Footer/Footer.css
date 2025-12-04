@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     color: #F0F1F3;
+    flex-wrap: wrap;
 }
 
 /* Left Logo */
@@ -19,6 +20,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-bottom: 20px;
 }
 
 .portfolio10-logo-circle {
@@ -41,6 +43,8 @@
     display: flex;
     gap: 25px;
     list-style: none;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .portfolio10-footer-menu li {
@@ -52,4 +56,69 @@
 .portfolio10-footer-copy {
     font-size: 12px;
     opacity: 0.8;
+}
+
+/* Large Screens */
+@media (max-width: 1200px) {
+    .portfolio10-footer {
+        padding: 100px 100px 40px 100px;
+    }
+
+    .portfolio10-footer-left {
+        gap: 10px;
+    }
+
+    .portfolio10-footer-menu {
+        gap: 20px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .portfolio10-footer {
+        padding: 80px 50px 30px 50px;
+    }
+
+    .portfolio10-footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portfolio10-footer-left {
+        margin-bottom: 15px;
+    }
+
+    .portfolio10-footer-menu {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .portfolio10-footer {
+        padding: 60px 20px 20px 20px;
+    }
+
+    .portfolio10-footer-left {
+        margin-bottom: 10px;
+    }
+
+    .portfolio10-brand-name {
+        font-size: 16px;
+    }
+
+    .portfolio10-footer-menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .portfolio10-footer-menu li {
+        font-size: 11px;
+    }
+
+    .portfolio10-footer-copy {
+        font-size: 10px;
+    }
 }
