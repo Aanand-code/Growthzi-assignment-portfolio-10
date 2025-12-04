@@ -1,0 +1,55 @@
+.portfolio10-footer {
+    background: #2B384C;
+    padding: 120px 200px 50px 200px;
+    margin-top: 0;
+    width: 100%;
+}
+
+.portfolio10-footer-content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F0F1F3;
+}
+
+/* Left Logo */
+.portfolio10-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.portfolio10-logo-circle {
+    width: 38px;
+    height: 38px;
+    background: #9143ff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio10-brand-name {
+    font-size: 20px;
+}
+
+/* Menu */
+.portfolio10-footer-menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.portfolio10-footer-menu li {
+    font-size: 12px;
+    cursor: pointer;
+    color: #F0F1F3;
+}
+
+.portfolio10-footer-copy {
+    font-size: 12px;
+    opacity: 0.8;
+}

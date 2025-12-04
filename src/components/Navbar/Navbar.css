@@ -1,0 +1,76 @@
+/* MAIN NAVBAR */
+.portfolio10-navbar {
+    width: 100%;
+    padding: 20px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+/* LEFT LOGO SECTION */
+.portfolio10-nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.portfolio10-logo-circle {
+    width: 40px;
+    height: 40px;
+    background: #A53DFF;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio10-logo-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0d1b3e;
+}
+
+.portfolio10-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* NAV LINKS */
+.portfolio10-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.portfolio10-nav-links li {
+    font-size: 15px;
+    color: #283044;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.portfolio10-nav-links li:hover {
+    color: #8431CC;
+}
+
+/* CONTACT BUTTON */
+.portfolio10-contact-btn {
+    background: #A53DFF;
+    color: #fff;
+    padding: 10px 28px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.portfolio10-contact-btn:hover {
+    background: #8431CC;
+}

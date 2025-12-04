@@ -1,0 +1,54 @@
+.portfolio10-calltoaction-section {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    background: #132238;
+    /* border: 2px solid black; */
+}
+
+.portfolio10-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    max-width: 700px;
+
+}
+
+.portfolio10-heading {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    align-self: center;
+    color: #FFFFFF;
+}
+
+.portfolio10-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #A5ACB5;
+}
+
+.portfolio10-calltoaction-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background: #A53DFF;
+    padding: 14px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.portfolio10-calltoaction-btn:hover {
+    background: #8431CC;
+}

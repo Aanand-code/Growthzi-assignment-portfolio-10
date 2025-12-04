@@ -1,0 +1,47 @@
+/* Section wrapper */
+.portfolio10-clients-section {
+    width: 100%;
+    padding: 80px 200px;
+    text-align: center;
+    background: transparent;
+    /* max-width: 1200px; */
+    /* margin: auto; */
+    /* border: 2px solid black; */
+}
+
+/* Title */
+.portfolio10-clients-header h1 {
+    font-size: 42px;
+    color: #1b1f3b;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.portfolio10-clients-header h2 {
+    font-size: 16px;
+    color: #7a8294;
+    font-weight: 400;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+/* Logos Row */
+.portfolio10-clients-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Logo images */
+.portfolio10-clients-logos img {
+    width: 120px;
+    /* opacity: 0.5; */
+    transition: 0.3s;
+}
+
+.portfolio10-clients-logos img:hover {
+    /* opacity: 1; */
+    transform: translateY(-4px);
+}

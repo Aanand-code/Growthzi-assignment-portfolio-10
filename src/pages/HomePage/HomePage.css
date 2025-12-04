@@ -1,0 +1,128 @@
+/* Whole page background */
+.portfolio10-homepage {
+    width: 100%;
+    /* background:
+        radial-gradient(circle at top left, #ffe9c2 0%, transparent 60%),
+        radial-gradient(circle at top right, #d8f8ff 0%, transparent 60%); */
+}
+
+/* HERO SECTION */
+.portfolio10-hero-section {
+    width: 100%;
+    padding: 80px 200px 600px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.portfolio10-hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-evenly;
+}
+
+.portfolio10-hero-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111;
+}
+
+.portfolio10-hero-left span {
+    color: #111;
+}
+
+.portfolio10-hero-left p {
+    margin: 18px 0 25px;
+    color: #555;
+    width: 95%;
+    line-height: 1.5;
+}
+
+.portfolio10-say-hello-btn {
+    background: #A53DFF;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+/* Stats row */
+.portfolio10-stats-row {
+    display: flex;
+    gap: 2px;
+    overflow: hidden;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.portfolio10-stat-box {
+    background: #f8f0ff;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 10px; */
+}
+
+.portfolio10-stat-box h3 {
+    font-size: 24px;
+    margin: 0;
+    color: #111;
+}
+
+.portfolio10-stat-box p {
+    color: #777;
+    margin: 5px 0 0;
+    font-size: 12px;
+    /* white-space: nowrap; */
+}
+
+/* Hero image */
+.portfolio10-hero-img {
+    height: 506px;
+    width: 436px;
+    object-fit: cover;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.gradient-blur-1 {
+    position: absolute;
+    top: -1050px;
+    right: -1000px;
+    width: 2000px;
+    height: 2000px;
+    background: radial-gradient(circle, rgba(170, 49, 204, 0.6), transparent 60%);
+    filter: blur(600px);
+    z-index: -1;
+}
+
+.gradient-blur-2 {
+    position: absolute;
+    bottom: -690px;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 216, 118, 0.721), transparent 50%);
+    filter: blur(600px);
+    z-index: -1;
+}
+
+.gradient-blur-3 {
+    position: absolute;
+    bottom: -450px;
+    right: -250px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(118, 241, 255, 0.662), transparent 70%);
+    filter: blur(160px);
+    z-index: -1;
+}
